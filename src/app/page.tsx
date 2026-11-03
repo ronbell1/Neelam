@@ -168,7 +168,7 @@ function BrandIntroSection() {
             <Reveal delay={0.4}>
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 mt-8 text-gold text-[0.75rem] font-semibold tracking-[0.15em] uppercase hover:text-gold-dark transition-colors duration-300 group"
+                className="link-hit-area inline-flex items-center gap-2 mt-8 text-gold text-[0.75rem] font-semibold tracking-[0.15em] uppercase hover:text-gold-dark transition-colors duration-300 group"
               >
                 Our Story
                 <ArrowUpRight
@@ -237,7 +237,7 @@ function FeaturedCollections() {
           <Reveal delay={0.3}>
             <Link
               href="/collections"
-              className="inline-flex items-center gap-2 text-gold text-[0.75rem] font-semibold tracking-[0.15em] uppercase hover:text-gold-light transition-colors duration-300 group shrink-0"
+              className="link-hit-area inline-flex items-center gap-2 text-gold text-[0.75rem] font-semibold tracking-[0.15em] uppercase hover:text-gold-light transition-colors duration-300 group shrink-0"
             >
               View All
               <ArrowRight
@@ -291,7 +291,7 @@ function FeaturedCollections() {
         </div>
 
         {/* Second row — 2 items */}
-        <div className="horizontal-rail -mx-6 mt-5 flex snap-x snap-mandatory gap-5 overflow-x-auto px-6 pb-3 md:mx-0 md:mt-6 md:grid md:grid-cols-2 md:gap-6 md:overflow-visible md:px-0 md:pb-0 lg:mt-8 lg:gap-8">
+        <div className="horizontal-rail -mx-6 mt-5 flex snap-x snap-mandatory gap-5 overflow-x-auto px-6 pb-0 md:mx-0 md:mt-6 md:grid md:grid-cols-2 md:gap-6 md:overflow-visible md:px-0 md:pb-0 lg:mt-8 lg:gap-8">
           {COLLECTIONS.slice(3).map((col, i) => (
             <Reveal key={col.id} delay={i * 0.15} className="min-w-[84vw] snap-start md:min-w-0">
               <Link
@@ -472,7 +472,7 @@ function WholesaleBenefitsSection() {
             <Reveal delay={0.3}>
               <Link
                 href="/wholesale"
-                className="inline-flex items-center gap-2 mt-8 text-gold text-[0.75rem] font-semibold tracking-[0.15em] uppercase hover:text-gold-light transition-colors duration-300 group"
+                className="link-hit-area inline-flex items-center gap-2 mt-8 text-gold text-[0.75rem] font-semibold tracking-[0.15em] uppercase hover:text-gold-light transition-colors duration-300 group"
               >
                 Learn More
                 <ArrowRight

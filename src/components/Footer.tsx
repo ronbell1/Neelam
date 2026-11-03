@@ -135,10 +135,10 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-ivory/10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-ivory/40 text-xs font-light tracking-wide">
+          <p className="text-ivory/55 text-xs font-light tracking-wide">
             © {currentYear} Neelaya Exports. All rights reserved.
           </p>
-          <p className="text-ivory/30 text-xs font-light tracking-wide">
+          <p className="text-ivory/50 text-xs font-light tracking-wide">
             Handcrafted in India with ♡
           </p>
         </div>

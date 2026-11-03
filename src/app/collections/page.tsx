@@ -104,7 +104,7 @@ export default function CollectionsPage() {
                 key={col.id}
                 href={`#${col.id}`}
                 aria-current={activeSection === col.id ? "location" : undefined}
-                className={`relative text-[0.7rem] font-sans font-medium tracking-[0.1em] uppercase transition-colors duration-300 whitespace-nowrap shrink-0 after:absolute after:-bottom-4 after:left-0 after:h-px after:bg-gold after:transition-all ${
+                className={`relative min-h-[44px] px-2 py-3 text-[0.7rem] font-sans font-medium tracking-[0.1em] uppercase transition-colors duration-300 whitespace-nowrap shrink-0 after:absolute after:-bottom-1 after:left-2 after:right-2 after:h-px after:bg-gold after:transition-all ${
                   activeSection === col.id
                     ? "text-gold after:w-full"
                     : "text-navy/50 hover:text-gold after:w-0"

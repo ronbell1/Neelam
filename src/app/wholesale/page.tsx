@@ -166,14 +166,14 @@ export default function WholesalePage() {
               { label: "Shipping", value: WHOLESALE.shipping },
               { label: "Payment Terms", value: WHOLESALE.payment },
             ].map((info, i) => (
-              <StaggerItem key={info.label} className="">
+              <StaggerItem key={info.label} className="min-w-0">
                 <div className="flex items-start gap-4">
                   <div className="text-gold/60 mt-1">{infoIcons[i]}</div>
-                  <div>
+                  <div className="min-w-0">
                     <span className="text-ivory/55 text-[0.7rem] font-sans tracking-[0.15em] uppercase font-medium block mb-1">
                       {info.label}
                     </span>
-                    <span className="text-ivory text-sm font-light">
+                    <span className="block max-w-full break-words text-ivory text-sm font-light">
                       {info.value}
                     </span>
                   </div>
