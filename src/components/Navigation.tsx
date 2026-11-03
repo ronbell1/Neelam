@@ -164,7 +164,7 @@ export default function Navigation() {
                     className={`block text-center font-serif text-4xl md:text-5xl py-3 transition-colors duration-300 ${
                       pathname === link.href
                         ? "text-gold"
-                        : "text-ivory/70 hover:text-ivory"
+                        : "text-ivory/80 hover:text-ivory"
                     }`}
                     aria-current={pathname === link.href ? "page" : undefined}
                   >
@@ -179,10 +179,10 @@ export default function Navigation() {
                 className="mt-10"
               >
                 <div className="gold-line mx-auto mb-8" />
-                <p className="text-ivory/40 text-sm text-center font-sans tracking-wide">
+                <p className="text-ivory/60 text-sm text-center font-sans tracking-wide">
                   {BRAND.email}
                 </p>
-                <p className="text-ivory/30 text-xs text-center font-sans tracking-wide mt-2">
+                <p className="text-ivory/50 text-xs text-center font-sans tracking-wide mt-2">
                   {BRAND.phone}
                 </p>
               </motion.div>

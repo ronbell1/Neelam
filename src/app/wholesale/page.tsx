@@ -113,7 +113,7 @@ export default function WholesalePage() {
             className="font-serif text-ivory text-4xl md:text-6xl lg:text-7xl font-light leading-[1.05] tracking-tight max-w-3xl"
           />
           <Reveal delay={0.3}>
-            <p className="mt-8 text-ivory/50 text-base md:text-lg max-w-2xl font-light leading-relaxed">
+            <p className="mt-8 text-ivory/65 text-base md:text-lg max-w-2xl font-light leading-relaxed">
               {WHOLESALE.subtitle}
             </p>
           </Reveal>
@@ -146,7 +146,7 @@ export default function WholesalePage() {
                   <h3 className="font-serif text-navy text-xl font-light mt-4 mb-3 group-hover:text-ivory transition-colors duration-700">
                     {step.title}
                   </h3>
-                  <p className="text-[#6b6b6b] text-sm leading-relaxed font-light group-hover:text-ivory/50 transition-colors duration-700">
+                  <p className="text-[#555] text-sm leading-relaxed font-light group-hover:text-ivory/60 transition-colors duration-700">
                     {step.description}
                   </p>
                 </div>
@@ -159,18 +159,18 @@ export default function WholesalePage() {
       {/* ═══ KEY INFO ═══ */}
       <section className="grain-dark relative z-10 py-16 md:py-20 bg-navy-dark">
         <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16">
-          <StaggerContainer className="horizontal-rail -mx-6 flex snap-x snap-mandatory gap-6 overflow-x-auto px-6 pb-3 sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-8 sm:overflow-visible sm:px-0 sm:pb-0 lg:grid-cols-4">
+          <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 lg:grid-cols-4">
             {[
               { label: "Minimum Order", value: WHOLESALE.moq },
               { label: "Lead Time", value: WHOLESALE.leadTime },
               { label: "Shipping", value: WHOLESALE.shipping },
               { label: "Payment Terms", value: WHOLESALE.payment },
             ].map((info, i) => (
-              <StaggerItem key={info.label} className="min-w-[82vw] snap-start sm:min-w-0">
+              <StaggerItem key={info.label} className="">
                 <div className="flex items-start gap-4">
-                  <div className="text-gold/50 mt-1">{infoIcons[i]}</div>
+                  <div className="text-gold/60 mt-1">{infoIcons[i]}</div>
                   <div>
-                    <span className="text-ivory/40 text-[0.7rem] font-sans tracking-[0.15em] uppercase font-medium block mb-1">
+                    <span className="text-ivory/55 text-[0.7rem] font-sans tracking-[0.15em] uppercase font-medium block mb-1">
                       {info.label}
                     </span>
                     <span className="text-ivory text-sm font-light">
@@ -204,7 +204,7 @@ export default function WholesalePage() {
                 className="font-serif text-navy text-3xl md:text-4xl font-light leading-[1.2] tracking-tight"
               />
               <Reveal delay={0.2}>
-                <p className="mt-6 text-[#6b6b6b] text-base leading-[1.8] font-light">
+                <p className="mt-6 text-[#4a4a4a] text-base leading-[1.8] font-light">
                   Our comprehensive catalogue features high-resolution imagery,
                   detailed specifications and pricing guidance for all five
                   collections. Perfect for buyers, designers and decision-makers.
@@ -264,7 +264,7 @@ export default function WholesalePage() {
                     <h3 className="font-serif text-navy text-2xl font-light mb-3">
                       Request Received
                     </h3>
-                    <p className="text-[#6b6b6b] text-sm font-light leading-relaxed max-w-sm mx-auto">
+                    <p className="text-[#4a4a4a] text-sm font-light leading-relaxed max-w-sm mx-auto">
                       Thank you for your interest. Our team will review your
                       request and get back to you within 2 business days.
                     </p>
@@ -344,7 +344,7 @@ export default function WholesalePage() {
                   {/* Collection Select */}
                   <Reveal delay={0.2}>
                     <div>
-                      <label className="text-[0.7rem] font-sans font-semibold tracking-[0.15em] uppercase text-navy/50 mb-3 block">
+                      <label className="text-[0.7rem] font-sans font-semibold tracking-[0.15em] uppercase text-navy/55 mb-3 block">
                         Collections of Interest *
                       </label>
                       <div className="flex flex-wrap gap-2">

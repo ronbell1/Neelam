@@ -97,7 +97,7 @@ export default function ContactPage() {
               </Reveal>
 
               <Reveal delay={0.1}>
-                <p className="text-[#6b6b6b] text-base leading-[1.8] font-light mb-10">
+                <p className="text-[#4a4a4a] text-base leading-[1.8] font-light mb-10">
                   Whether you&apos;re a retailer, designer, hotelier or collector —
                   we&apos;re here to help you bring authentic Indian craftsmanship to
                   your world.
@@ -111,7 +111,7 @@ export default function ContactPage() {
                       <Mail size={18} className="text-gold" />
                     </div>
                     <div>
-                      <span className="text-[0.7rem] font-sans font-semibold tracking-[0.15em] uppercase text-navy/40 block mb-1">
+                      <span className="text-[0.7rem] font-sans font-semibold tracking-[0.15em] uppercase text-navy/50 block mb-1">
                         Email
                       </span>
                       <a
@@ -130,7 +130,7 @@ export default function ContactPage() {
                       <Phone size={18} className="text-gold" />
                     </div>
                     <div>
-                      <span className="text-[0.7rem] font-sans font-semibold tracking-[0.15em] uppercase text-navy/40 block mb-1">
+                      <span className="text-[0.7rem] font-sans font-semibold tracking-[0.15em] uppercase text-navy/50 block mb-1">
                         Phone
                       </span>
                       <a
@@ -149,7 +149,7 @@ export default function ContactPage() {
                       <MapPin size={18} className="text-gold" />
                     </div>
                     <div>
-                      <span className="text-[0.7rem] font-sans font-semibold tracking-[0.15em] uppercase text-navy/40 block mb-1">
+                      <span className="text-[0.7rem] font-sans font-semibold tracking-[0.15em] uppercase text-navy/50 block mb-1">
                         Visit Us
                       </span>
                       <p className="text-navy text-sm leading-relaxed">
@@ -163,7 +163,7 @@ export default function ContactPage() {
               {/* Social Links */}
               <Reveal delay={0.3}>
                 <div className="mt-10 pt-10 border-t border-navy/5">
-                  <span className="text-[0.7rem] font-sans font-semibold tracking-[0.15em] uppercase text-navy/40 block mb-4">
+                  <span className="text-[0.7rem] font-sans font-semibold tracking-[0.15em] uppercase text-navy/50 block mb-4">
                     Follow Us
                   </span>
                   <div className="flex items-center gap-4">
@@ -181,7 +181,7 @@ export default function ContactPage() {
                         rel="noopener noreferrer"
                         aria-label={label}
                         whileHover={{ y: -3, scale: 1.1 }}
-                        className="w-10 h-10 rounded-full bg-navy/5 flex items-center justify-center text-navy/40 hover:text-gold hover:bg-gold/10 transition-colors duration-300"
+                        className="w-10 h-10 rounded-full bg-navy/5 flex items-center justify-center text-navy/50 hover:text-gold hover:bg-gold/10 transition-colors duration-300"
                       >
                         <Icon size={18} />
                       </motion.a>
@@ -205,7 +205,7 @@ export default function ContactPage() {
                   <h3 className="font-serif text-navy text-3xl font-light mb-4">
                     Message Sent
                   </h3>
-                  <p className="text-[#6b6b6b] text-base font-light leading-relaxed max-w-md">
+                  <p className="text-[#4a4a4a] text-base font-light leading-relaxed max-w-md">
                     Thank you for reaching out. Our team will respond within 24
                     hours. In the meantime, feel free to browse our collections.
                   </p>
@@ -370,7 +370,7 @@ export default function ContactPage() {
             <p className="text-ivory font-serif text-xl md:text-2xl font-light">
               Hyderabad, India
             </p>
-            <p className="text-ivory/40 text-sm font-light mt-2 max-w-sm mx-auto px-4">
+            <p className="text-ivory/55 text-sm font-light mt-2 max-w-sm mx-auto px-4">
               {BRAND.address}
             </p>
           </div>

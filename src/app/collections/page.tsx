@@ -98,7 +98,7 @@ export default function CollectionsPage() {
       {/* ═══ COLLECTION NAV ═══ */}
       <section className="sticky top-20 md:top-24 z-30 bg-ivory/95 backdrop-blur-md border-b border-navy/5">
         <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-          <div className="flex items-center gap-6 md:gap-10 py-4 min-w-max">
+          <div className="flex items-center gap-6 md:gap-10 py-5 min-w-max">
             {COLLECTIONS.map((col) => (
               <a
                 key={col.id}
@@ -122,7 +122,7 @@ export default function CollectionsPage() {
         <section
           key={collection.id}
           id={collection.id}
-          className={`relative z-10 py-20 md:py-32 scroll-mt-36 ${
+          className={`relative z-10 py-20 md:py-32 scroll-mt-40 ${
             i % 2 === 0 ? "bg-ivory" : "bg-ivory-warm"
           }`}
         >
@@ -157,7 +157,7 @@ export default function CollectionsPage() {
                   className="font-serif text-navy text-3xl md:text-4xl lg:text-5xl font-light leading-[1.15] tracking-tight mt-4"
                 />
                 <Reveal delay={0.2}>
-                  <p className="mt-8 text-[#6b6b6b] text-base leading-[1.9] font-light">
+                  <p className="mt-8 text-[#4a4a4a] text-base leading-[1.9] font-light">
                     {collection.longDescription}
                   </p>
                 </Reveal>
@@ -249,7 +249,7 @@ export default function CollectionsPage() {
           <Reveal>
             <div className="flex items-center justify-center gap-4 mb-8">
               <div className="w-16 h-px bg-gold/30" />
-              <span className="text-gold/70 text-[0.7rem] font-sans font-semibold tracking-[0.3em] uppercase">
+              <span className="text-gold/80 text-[0.7rem] font-sans font-semibold tracking-[0.3em] uppercase">
                 Ready to Order?
               </span>
               <div className="w-16 h-px bg-gold/30" />

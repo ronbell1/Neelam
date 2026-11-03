@@ -42,7 +42,7 @@ function HeroSection() {
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
   return (
-    <section ref={ref} className="grain-dark relative h-[100svh] min-h-[400px] md:h-screen md:min-h-[700px] overflow-hidden">
+    <section ref={ref} className="grain-dark relative h-[100svh] min-h-[520px] md:h-screen md:min-h-[700px] overflow-hidden">
       {/* Background Image with Parallax */}
       <motion.div style={{ y }} className="absolute inset-0">
         <picture className="absolute inset-0">
@@ -63,7 +63,7 @@ function HeroSection() {
       {/* Content */}
       <motion.div
         style={{ opacity }}
-        className="relative z-10 flex flex-col justify-end h-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16 pb-8 md:pb-28"
+        className="relative z-10 flex flex-col justify-end h-full max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16 pb-12 md:pb-28"
       >
         {/* Eyebrow */}
         <motion.div
@@ -95,7 +95,7 @@ function HeroSection() {
           initial={false}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.8 }}
-          className="mt-8 text-ivory/60 text-base md:text-lg max-w-xl font-light leading-relaxed"
+          className="mt-8 text-ivory/70 text-base md:text-lg max-w-xl font-light leading-relaxed"
         >
           {HERO.subheadline}
         </motion.p>
@@ -142,9 +142,9 @@ function HeroSection() {
 // ═══════════════════════════════════════════════════════════
 function BrandIntroSection() {
   return (
-    <section className="relative z-10 py-24 md:py-36 bg-ivory">
+    <section className="relative z-10 py-20 md:py-36 bg-ivory">
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16">
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-center">
           {/* Text */}
           <div className="lg:col-span-5 order-2 lg:order-1">
             <Reveal>
@@ -161,7 +161,7 @@ function BrandIntroSection() {
               className="font-serif text-navy text-3xl md:text-4xl lg:text-[2.75rem] font-light leading-[1.2] tracking-tight"
             />
             <Reveal delay={0.3}>
-              <p className="mt-8 text-[#6b6b6b] text-base leading-[1.8] font-light">
+              <p className="mt-8 text-[#4a4a4a] text-base leading-[1.85] font-light">
                 {BRAND_INTRO.body}
               </p>
             </Reveal>
@@ -181,7 +181,7 @@ function BrandIntroSection() {
 
           {/* Images — Asymmetric Composition */}
           <div className="lg:col-span-7 order-1 lg:order-2">
-            <div className="relative pb-16 md:pb-0">
+            <div className="relative pb-8 md:pb-0">
               <div className="relative aspect-[4/5] max-w-md ml-auto overflow-hidden">
                 <Image
                   src={BRAND_INTRO.image}
@@ -218,12 +218,12 @@ function FeaturedCollections() {
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-gold/20 to-transparent" />
 
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 md:mb-20 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-14 md:mb-20 gap-6">
           <div>
             <Reveal>
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-px bg-gold/40" />
-                <span className="text-gold/70 text-[0.7rem] font-sans font-semibold tracking-[0.25em] uppercase">
+                <div className="w-12 h-px bg-gold/50" />
+                <span className="text-gold/80 text-[0.7rem] font-sans font-semibold tracking-[0.25em] uppercase">
                   Our Collections
                 </span>
               </div>
@@ -249,7 +249,7 @@ function FeaturedCollections() {
         </div>
 
         {/* Collections Grid — Editorial Layout */}
-        <div className="horizontal-rail -mx-6 flex snap-x snap-mandatory gap-6 overflow-x-auto px-6 pb-3 md:mx-0 md:grid md:grid-cols-2 md:gap-8 md:overflow-visible md:px-0 md:pb-0 lg:grid-cols-3">
+        <div className="horizontal-rail -mx-6 flex snap-x snap-mandatory gap-5 overflow-x-auto px-6 pb-3 md:mx-0 md:grid md:grid-cols-2 md:gap-6 md:overflow-visible md:px-0 md:pb-0 lg:grid-cols-3 lg:gap-8">
           {COLLECTIONS.slice(0, 3).map((col, i) => (
             <Reveal key={col.id} delay={i * 0.15} className="min-w-[78vw] snap-start md:min-w-0">
               <Link
@@ -268,13 +268,13 @@ function FeaturedCollections() {
 
                   {/* Content Overlay */}
                   <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
-                    <span className="text-gold/60 text-[0.65rem] font-sans font-semibold tracking-[0.2em] uppercase mb-2 block">
+                    <span className="text-gold/70 text-[0.65rem] font-sans font-semibold tracking-[0.2em] uppercase mb-2 block">
                       {col.subtitle}
                     </span>
                     <h3 className="font-serif text-ivory text-2xl md:text-3xl font-light leading-tight mb-3">
                       {col.title}
                     </h3>
-                    <div className="flex items-center gap-2 text-ivory/50 text-[0.7rem] font-sans tracking-[0.1em] uppercase group-hover:text-gold transition-colors duration-500">
+                    <div className="flex items-center gap-2 text-ivory/60 text-[0.7rem] font-sans tracking-[0.1em] uppercase group-hover:text-gold transition-colors duration-500">
                       Explore
                       <ArrowUpRight
                         size={14}
@@ -291,7 +291,7 @@ function FeaturedCollections() {
         </div>
 
         {/* Second row — 2 items */}
-        <div className="horizontal-rail -mx-6 mt-6 flex snap-x snap-mandatory gap-6 overflow-x-auto px-6 pb-3 md:mx-0 md:mt-8 md:grid md:grid-cols-2 md:gap-8 md:overflow-visible md:px-0 md:pb-0">
+        <div className="horizontal-rail -mx-6 mt-5 flex snap-x snap-mandatory gap-5 overflow-x-auto px-6 pb-3 md:mx-0 md:mt-6 md:grid md:grid-cols-2 md:gap-6 md:overflow-visible md:px-0 md:pb-0 lg:mt-8 lg:gap-8">
           {COLLECTIONS.slice(3).map((col, i) => (
             <Reveal key={col.id} delay={i * 0.15} className="min-w-[84vw] snap-start md:min-w-0">
               <Link
@@ -309,13 +309,13 @@ function FeaturedCollections() {
                   <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/80 via-navy-dark/20 to-transparent" />
 
                   <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
-                    <span className="text-gold/60 text-[0.65rem] font-sans font-semibold tracking-[0.2em] uppercase mb-2 block">
+                    <span className="text-gold/70 text-[0.65rem] font-sans font-semibold tracking-[0.2em] uppercase mb-2 block">
                       {col.subtitle}
                     </span>
                     <h3 className="font-serif text-ivory text-2xl md:text-3xl font-light leading-tight mb-3">
                       {col.title}
                     </h3>
-                    <div className="flex items-center gap-2 text-ivory/50 text-[0.7rem] font-sans tracking-[0.1em] uppercase group-hover:text-gold transition-colors duration-500">
+                    <div className="flex items-center gap-2 text-ivory/60 text-[0.7rem] font-sans tracking-[0.1em] uppercase group-hover:text-gold transition-colors duration-500">
                       Explore
                       <ArrowUpRight size={14} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </div>
@@ -337,9 +337,9 @@ function FeaturedCollections() {
 // ═══════════════════════════════════════════════════════════
 function CraftsmanshipSection() {
   return (
-    <section className="grain-surface relative z-10 py-24 md:py-36 bg-ivory">
+    <section className="grain-surface relative z-10 py-20 md:py-36 bg-ivory">
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-center">
           {/* Image */}
           <div className="relative aspect-[4/5] md:aspect-[3/4] overflow-hidden">
             <Image
@@ -370,7 +370,7 @@ function CraftsmanshipSection() {
             />
 
             <Reveal delay={0.3}>
-              <p className="mt-8 text-[#6b6b6b] text-base leading-[1.8] font-light">
+              <p className="mt-8 text-[#4a4a4a] text-base leading-[1.85] font-light">
                 {CRAFTSMANSHIP.body}
               </p>
             </Reveal>
@@ -383,7 +383,7 @@ function CraftsmanshipSection() {
                     value={stat.number}
                     className="block font-serif text-4xl md:text-5xl text-navy font-light"
                   />
-                  <span className="block mt-2 text-[#6b6b6b] text-[0.75rem] font-sans tracking-[0.1em] uppercase font-medium">
+                  <span className="block mt-2 text-[#555] text-[0.75rem] font-sans tracking-[0.1em] uppercase font-medium">
                     {stat.label}
                   </span>
                 </StaggerItem>
@@ -401,9 +401,9 @@ function CraftsmanshipSection() {
 // ═══════════════════════════════════════════════════════════
 function TestimonialsSection() {
   return (
-    <section className="relative z-10 py-24 md:py-32 bg-ivory-warm">
+    <section className="relative z-10 py-20 md:py-32 bg-ivory-warm">
       <div className="max-w-[1440px] mx-auto px-6 md:px-12 lg:px-16">
-        <Reveal className="text-center mb-16">
+        <Reveal className="text-center mb-12 md:mb-16">
           <div className="flex items-center justify-center gap-4 mb-6">
             <div className="w-12 h-px bg-gold/30" />
             <span className="text-gold text-[0.7rem] font-sans font-semibold tracking-[0.25em] uppercase">
@@ -411,12 +411,15 @@ function TestimonialsSection() {
             </span>
             <div className="w-12 h-px bg-gold/30" />
           </div>
+          <h2 className="font-serif text-navy text-2xl md:text-3xl font-light leading-tight">
+            What our partners say
+          </h2>
         </Reveal>
 
-        <StaggerContainer className="horizontal-rail -mx-6 flex snap-x snap-mandatory gap-6 overflow-x-auto px-6 pb-3 md:mx-0 md:grid md:grid-cols-3 md:gap-12 md:overflow-visible md:px-0 md:pb-0">
+        <StaggerContainer className="horizontal-rail -mx-6 flex snap-x snap-mandatory gap-5 overflow-x-auto px-6 pb-3 md:mx-0 md:grid md:grid-cols-3 md:gap-10 md:overflow-visible md:px-0 md:pb-0">
           {TESTIMONIALS.map((testimonial, i) => (
             <StaggerItem key={i} className="h-full min-w-[84vw] snap-start md:min-w-0">
-              <div className="relative flex h-full flex-col p-8 md:p-10 bg-ivory rounded-sm">
+              <div className="relative flex h-full flex-col p-8 md:p-10 bg-ivory rounded-sm shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
                 {/* Quote mark */}
                 <span className="absolute top-4 left-6 font-serif text-6xl text-gold/15 leading-none select-none">
                   &ldquo;
@@ -428,7 +431,7 @@ function TestimonialsSection() {
                   <p className="text-navy font-semibold text-sm font-sans">
                     {testimonial.author}
                   </p>
-                  <p className="text-[#6b6b6b] text-xs font-sans mt-1 tracking-wide">
+                  <p className="text-[#555] text-xs font-sans mt-1 tracking-wide">
                     {testimonial.role}
                   </p>
                 </div>
@@ -455,8 +458,8 @@ function WholesaleBenefitsSection() {
           <div className="lg:col-span-4">
             <Reveal>
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-px bg-gold/40" />
-                <span className="text-gold/70 text-[0.7rem] font-sans font-semibold tracking-[0.25em] uppercase">
+                <div className="w-12 h-px bg-gold/50" />
+                <span className="text-gold/80 text-[0.7rem] font-sans font-semibold tracking-[0.25em] uppercase">
                   Wholesale
                 </span>
               </div>
@@ -482,17 +485,17 @@ function WholesaleBenefitsSection() {
 
           {/* Right — Benefits */}
           <div className="lg:col-span-8">
-            <StaggerContainer className="horizontal-rail -mx-6 flex snap-x snap-mandatory gap-6 overflow-x-auto px-6 pb-3 sm:mx-0 sm:grid sm:grid-cols-2 sm:gap-8 sm:overflow-visible sm:px-0 sm:pb-0">
+            <StaggerContainer className="grid grid-cols-1 sm:grid-cols-2 gap-6 md:gap-8">
               {WHOLESALE_BENEFITS.map((benefit) => (
-                <StaggerItem key={benefit.title} className="h-full min-w-[82vw] snap-start sm:min-w-0">
-                  <div className="h-full p-6 md:p-8 border border-ivory/5 rounded-sm hover:border-gold/20 transition-colors duration-500 group">
-                    <div className="text-gold/60 mb-4 group-hover:text-gold transition-colors duration-500">
+                <StaggerItem key={benefit.title} className="h-full">
+                  <div className="h-full p-6 md:p-8 border border-ivory/8 rounded-sm hover:border-gold/20 transition-colors duration-500 group">
+                    <div className="text-gold/70 mb-4 group-hover:text-gold transition-colors duration-500">
                       {iconMap[benefit.icon]}
                     </div>
                     <h3 className="font-serif text-ivory text-xl font-light mb-3">
                       {benefit.title}
                     </h3>
-                    <p className="text-ivory/60 text-sm leading-relaxed font-light">
+                    <p className="text-ivory/70 text-sm leading-relaxed font-light">
                       {benefit.description}
                     </p>
                   </div>
@@ -511,7 +514,7 @@ function WholesaleBenefitsSection() {
 // ═══════════════════════════════════════════════════════════
 function CTASection() {
   return (
-    <section className="grain-dark relative z-10 py-32 md:py-44 overflow-hidden">
+    <section className="grain-dark relative z-10 py-28 md:py-44 overflow-hidden">
       {/* Background image — absolutely positioned within this relative section */}
       <div className="absolute inset-0 z-0">
         <Image
@@ -542,7 +545,7 @@ function CTASection() {
         />
 
         <Reveal delay={0.4}>
-          <p className="mt-8 text-ivory/50 text-base md:text-lg max-w-lg mx-auto font-light leading-relaxed">
+          <p className="mt-8 text-ivory/65 text-base md:text-lg max-w-lg mx-auto font-light leading-relaxed">
             Whether you&apos;re a luxury retailer, interior designer or collector —
             we&apos;d love to hear from you.
           </p>

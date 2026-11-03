@@ -32,7 +32,7 @@ export default function Footer() {
                 Exports
               </span>
             </Link>
-            <p className="mt-6 text-ivory/50 text-sm leading-relaxed max-w-sm font-light">
+            <p className="mt-6 text-ivory/60 text-sm leading-relaxed max-w-sm font-light">
               {BRAND.description.substring(0, 200)}...
             </p>
             <div className="flex items-center gap-5 mt-8">
@@ -46,7 +46,7 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   aria-label={label}
                   whileHover={{ y: -3 }}
-                  className="text-ivory/40 hover:text-gold transition-colors duration-300"
+                  className="text-ivory/50 hover:text-gold transition-colors duration-300"
                 >
                   <Icon size={18} />
                 </motion.a>
@@ -64,7 +64,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-ivory/50 hover:text-ivory text-sm transition-colors duration-300 font-light"
+                    className="text-ivory/60 hover:text-ivory text-sm transition-colors duration-300 font-light"
                   >
                     {link.label}
                   </Link>
@@ -83,7 +83,7 @@ export default function Footer() {
                 <li key={col.id}>
                   <Link
                     href={`/collections#${col.id}`}
-                    className="text-ivory/50 hover:text-ivory text-sm transition-colors duration-300 font-light"
+                    className="text-ivory/60 hover:text-ivory text-sm transition-colors duration-300 font-light"
                   >
                     {col.title}
                   </Link>
@@ -102,7 +102,7 @@ export default function Footer() {
                 <Mail size={16} className="text-gold/60 mt-0.5 shrink-0" />
                 <a
                   href={`mailto:${BRAND.email}`}
-                  className="text-ivory/50 hover:text-ivory text-sm transition-colors duration-300 font-light"
+                  className="text-ivory/60 hover:text-ivory text-sm transition-colors duration-300 font-light"
                 >
                   {BRAND.email}
                 </a>
@@ -111,14 +111,14 @@ export default function Footer() {
                 <Phone size={16} className="text-gold/60 mt-0.5 shrink-0" />
                 <a
                   href={`tel:${BRAND.phone.replace(/\s/g, "")}`}
-                  className="text-ivory/50 hover:text-ivory text-sm transition-colors duration-300 font-light"
+                  className="text-ivory/60 hover:text-ivory text-sm transition-colors duration-300 font-light"
                 >
                   {BRAND.phone}
                 </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin size={16} className="text-gold/60 mt-0.5 shrink-0" />
-                <span className="text-ivory/50 text-sm font-light leading-relaxed">
+                <span className="text-ivory/60 text-sm font-light leading-relaxed">
                   {BRAND.address}
                 </span>
               </li>
@@ -135,10 +135,10 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-16 pt-8 border-t border-ivory/10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-ivory/30 text-xs font-light tracking-wide">
+          <p className="text-ivory/40 text-xs font-light tracking-wide">
             © {currentYear} Neelaya Exports. All rights reserved.
           </p>
-          <p className="text-ivory/20 text-xs font-light tracking-wide">
+          <p className="text-ivory/30 text-xs font-light tracking-wide">
             Handcrafted in India with ♡
           </p>
         </div>
